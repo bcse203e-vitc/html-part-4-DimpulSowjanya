@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Positioning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 60px;
+    }
+
+    .box {
+      color: white;
+      padding: 10px 0;
+      width: 120px;
+      height: 50px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 50px;
+      border-radius: 4px;
+    }
+
+    .static-box {
+      background-color: #4682B4; /* steelblue */
+      margin-bottom: 20px;
+    }
+
+    .fixed-box {
+      background-color: #9370DB; /* mediumorchid */
+      position: fixed;
+      top: 80px;
+      right: 60px;
+    }
+
+    .relative-box {
+      background-color: #DAA520; /* goldenrod */
+      position: relative;
+      top: 10px;
+      left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .wrapper {
+      height: 100px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      position: relative;
+      padding: 10px;
+    }
+
+    .absolute-box {
+      background-color: #3CB371; /* seagreen */
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box static-box">Static Box</div>
+
+  <div class="box fixed-box">Fixed Box</div>
+
+  <div class="box relative-box">Relative Box</div>
+
+  <div class="wrapper">
+    <div class="box absolute-box">Absolute Box</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Column Blog Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background-color: #2f3242;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      font-size: 24px;
+    }
+
+    .container {
+      display: flex;
+      margin-top: 80px; /* leave space for fixed header */
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      height: 80vh;
+      overflow-y: auto;
+      border-right: 1px solid #ccc;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      column-count: 2;
+      column-gap: 30px;
+    }
+
+    .main-content p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #2f3242;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Blog</header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li>Tech</li>
+        <li>Science</li>
+        <li>Design</li>
+        <li>Career</li>
+        <li>Personal</li>
+      </ul>
+    </aside>
+
+    <div class="main-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nunc nec felis volutpat, id egestas nulla volutpat.</p>
+      <p>Quisque ultricies velit et orci posuere, at scelerisque orci vulputate. Integer tempor imperdiet arcu, nec mattis lorem vestibulum ut.</p>
+      <p>Nunc ac nisl facilisis, viverra nulla ac, tempus orci. Fusce posuere, nisl at placerat convallis

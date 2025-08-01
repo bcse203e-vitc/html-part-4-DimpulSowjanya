@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Transitions - Final Colors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .btn {
+      color: white;
+      padding: 12px 28px;
+      margin: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .save-btn {
+      background-color: #28a745; /* Green */
+    }
+
+    .save-btn:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    .cancel-btn {
+      background-color: #dc3545; /* Red */
+    }
+
+    .cancel-btn:hover {
+      background-color: #c82333;
+      transform: scale(1.05);
+    }
+
+    .submit-btn {
+      background-color: #007bff; /* Blue */
+    }
+
+    .submit-btn:hover {
+      background-color: #0069d9;
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn save-btn">Save</button>
+  <button class="btn cancel-btn">Cancel</button>
+  <button class="btn submit-btn">Submit</button>
+
+</body>
+</html>
